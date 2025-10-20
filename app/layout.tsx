@@ -6,13 +6,13 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://sitasoni.in'),
-  title: 'Jaggeshwar Sahu - SITASONI Trend',
-  description: 'Professional cloth seller at SITASONI Trend - Quality fashion and textiles in Nawagarh, Chhattisgarh. INTMI TEXTILES PRIVATE LIMITED.',
-  keywords: 'Jaggeshwar Sahu, SITASONI Trend, cloth seller, fashion, textiles, Nawagarh, Chhattisgarh, clothing store',
-  authors: [{ name: 'Jaggeshwar Sahu' }],
+  title: 'Jageshwar Sahu - SITASONI Trend',
+  description: 'Professional cloth seller at SITASONI Trend offering quality fashion and textiles in Nawagarh, Chhattisgarh. INTMI TEXTILES PRIVATE LIMITED.',
+  keywords: 'Jageshwar Sahu, SITASONI Trend, cloth seller, fashion, textiles, Nawagarh, Chhattisgarh, clothing store',
+  authors: [{ name: 'Jageshwar Sahu' }],
   openGraph: {
-    title: 'Jaggeshwar Sahu - SITASONI Trend',
-    description: 'Professional cloth seller at SITASONI Trend - Quality fashion and textiles in Nawagarh, Chhattisgarh.',
+    title: 'Jageshwar Sahu - SITASONI Trend',
+    description: 'Professional cloth seller at SITASONI Trend offering quality fashion and textiles in Nawagarh, Chhattisgarh.',
     url: 'https://sitasoni.in',
     siteName: 'SITASONI Trend',
     images: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: '/jaggu_profile.jpeg',
         width: 800,
         height: 600,
-        alt: 'Jaggeshwar Sahu Profile',
+        alt: 'Jageshwar Sahu Profile',
       },
     ],
     locale: 'en_US',
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jaggeshwar Sahu - SITASONI Trend',
-    description: 'Professional cloth seller at SITASONI Trend - Quality fashion and textiles in Nawagarh, Chhattisgarh.',
+    title: 'Jageshwar Sahu - SITASONI Trend',
+    description: 'Professional cloth seller at SITASONI Trend offering quality fashion and textiles in Nawagarh, Chhattisgarh.',
     images: ['/jaggu_profile.jpeg'],
   },
 }

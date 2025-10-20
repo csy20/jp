@@ -28,7 +28,7 @@ export default function HomePage() {
   }, [])
 
   const stats = [
-    { label: 'Years of Experience', value: '15+', icon: TrendingUp },
+    { label: 'Expert Guidance', value: 'Trusted', icon: TrendingUp },
     { label: 'Happy Customers', value: '1000+', icon: Users },
     { label: 'Clothing Items', value: '5000+', icon: Package },
     { label: 'Fashion Trends', value: '100+', icon: Star }
@@ -139,7 +139,7 @@ export default function HomePage() {
               <h1 className={`text-5xl md:text-7xl font-bold mb-4 ${
                 isDark ? 'text-white' : 'text-gray-900'
               }`}>
-                Jaggeshwar Sahu
+                Jageshwar Sahu
               </h1>
               <p className={`text-xl md:text-2xl mb-6 ${
                 isDark ? 'text-gray-300' : 'text-gray-700'
@@ -150,10 +150,10 @@ export default function HomePage() {
               <p className={`text-lg mb-8 leading-relaxed max-w-xl ${
                 isDark ? 'text-gray-400' : 'text-gray-600'
               }`}>
-                With over 15 years of experience in the textile industry, SITASONI Trend offers 
-                the finest quality clothing and latest fashion trends. Located in Nawagarh, 
-                Chhattisgarh, we pride ourselves on delivering exceptional fashion solutions 
-                for every occasion.
+                SITASONI Trend, led by Jageshwar Sahu, curates premium fabrics and contemporary
+                designs tailored to every celebration. From timeless classics to modern
+                statement pieces, we deliver exceptional fashion solutions with personalised
+                service across Nawagarh, Chhattisgarh.
               </p>
 
               {/* Stats */}
@@ -191,7 +191,7 @@ export default function HomePage() {
               <div className="relative w-80 h-80 mx-auto rounded-full overflow-hidden border-4 border-white/30 shadow-2xl">
                 <Image
                   src="/jaggu_profile.jpeg"
-                  alt="Jaggeshwar Sahu Profile"
+                  alt="Jageshwar Sahu Profile"
                   fill
                   className="object-cover"
                   priority
@@ -221,7 +221,7 @@ export default function HomePage() {
             <div className="text-center md:text-left">
               <h3 className={`text-xl font-bold ${
                 isDark ? 'text-white' : 'text-gray-900'
-              }`}>Jaggeshwar Sahu</h3>
+              }`}>Jageshwar Sahu</h3>
               <p className={`text-sm ${
                 isDark ? 'text-gray-400' : 'text-gray-600'
               }`}>SITASONI Trend - Quality Fashion Since Years</p>
@@ -269,7 +269,7 @@ export default function HomePage() {
           } text-center ${
             isDark ? 'text-gray-400' : 'text-gray-500'
           } text-sm`}>
-            <p>&copy; 2025 Jaggeshwar Sahu. All rights reserved.</p>
+            <p>&copy; 2025 Jageshwar Sahu. All rights reserved.</p>
           </div>
         </div>
       </footer>
