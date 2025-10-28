@@ -150,11 +150,28 @@ export default function HomePage() {
               <p className={`text-lg mb-8 leading-relaxed max-w-xl ${
                 isDark ? 'text-gray-400' : 'text-gray-600'
               }`}>
-                SITASONI Trend, led by Jageshwar Sahu, curates premium fabrics and contemporary
-                designs tailored to every celebration. From timeless classics to modern
-                statement pieces, we deliver exceptional fashion solutions with personalised
-                service across Nawagarh, Chhattisgarh.
+                SITASONI trend, founded by Jageshwar Sahu, is redefining premium fashion in India. From luxury fabrics to statement wear, every design is crafted to celebrate individuality.
+                With deep roots in <span className="text-blue-600 font-semibold">Nawagarh</span>, Chhattisgarh, and a growing digital presence, we blend tradition with modern fashion tech to deliver premium looks that trend nationwide.
               </p>
+              
+              {/* Shop Location */}
+              <div className={`flex items-start gap-3 mb-8 p-4 rounded-lg ${
+                isDark ? 'bg-white/10 border border-white/20' : 'bg-blue-50 border border-blue-200'
+              }`}>
+                <MapPin className={`w-6 h-6 flex-shrink-0 ${
+                  isDark ? 'text-blue-400' : 'text-blue-600'
+                }`} />
+                <div>
+                  <p className={`font-semibold ${
+                    isDark ? 'text-white' : 'text-gray-900'
+                  }`}>Visit Our Store</p>
+                  <p className={`text-sm ${
+                    isDark ? 'text-gray-400' : 'text-gray-600'
+                  }`}>
+                    SITASONI Trend, Nawagarh, Chhattisgarh, India
+                  </p>
+                </div>
+              </div>
 
               {/* Stats */}
               <div className="grid grid-cols-2 gap-4 mb-8">
@@ -175,6 +192,13 @@ export default function HomePage() {
                 ))}
               </div>
 
+              {/* Blue Banner Section */}
+              <div className="mb-8 p-6 bg-blue-500 rounded-2xl text-white text-center shadow-lg">
+                <p className="text-lg font-semibold">
+                  Become a SITASONI trend member, join now
+                </p>
+              </div>
+
               {/* CTA Button */}
               <a
                 href="https://sitasoni.in"
@@ -187,8 +211,8 @@ export default function HomePage() {
             </div>
 
             {/* Right - Profile Image */}
-            <div className="relative">
-              <div className="relative w-80 h-80 mx-auto rounded-full overflow-hidden border-4 border-white/30 shadow-2xl">
+            <div className="relative flex justify-center">
+              <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 mx-auto rounded-full overflow-hidden border-4 border-white/30 shadow-2xl">
                 <Image
                   src="/jaggu_profile.jpeg"
                   alt="Jageshwar Sahu Profile"
@@ -201,10 +225,10 @@ export default function HomePage() {
                 }`}></div>
               </div>
               {/* Floating Elements */}
-              <div className={`absolute -top-4 -right-4 w-16 h-16 rounded-full ${
+              <div className={`absolute -top-4 -right-4 w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full ${
                 isDark ? 'bg-purple-500/20' : 'bg-purple-500/30'
               } animate-pulse`}></div>
-              <div className={`absolute -bottom-4 -left-4 w-12 h-12 rounded-full ${
+              <div className={`absolute -bottom-4 -left-4 w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12 rounded-full ${
                 isDark ? 'bg-pink-500/20' : 'bg-pink-500/30'
               } animate-pulse delay-1000`}></div>
             </div>
