@@ -151,27 +151,8 @@ export default function HomePage() {
                 isDark ? 'text-gray-400' : 'text-gray-600'
               }`}>
                 SITASONI trend, founded by Jageshwar Sahu, is redefining premium fashion in India. From luxury fabrics to statement wear, every design is crafted to celebrate individuality.
-                With deep roots in <span className="text-blue-600 font-semibold">Nawagarh</span>, Chhattisgarh, and a growing digital presence, we blend tradition with modern fashion tech to deliver premium looks that trend nationwide.
+                With deep roots in <a href="https://share.google/gN3YEmaXIgcK6dUwc" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-semibold hover:underline cursor-pointer">Nawagarh</a>, Chhattisgarh, and a growing digital presence, we blend tradition with modern fashion tech to deliver premium looks that trend nationwide.
               </p>
-              
-              {/* Shop Location */}
-              <div className={`flex items-start gap-3 mb-8 p-4 rounded-lg ${
-                isDark ? 'bg-white/10 border border-white/20' : 'bg-blue-50 border border-blue-200'
-              }`}>
-                <MapPin className={`w-6 h-6 flex-shrink-0 ${
-                  isDark ? 'text-blue-400' : 'text-blue-600'
-                }`} />
-                <div>
-                  <p className={`font-semibold ${
-                    isDark ? 'text-white' : 'text-gray-900'
-                  }`}>Visit Our Store</p>
-                  <p className={`text-sm ${
-                    isDark ? 'text-gray-400' : 'text-gray-600'
-                  }`}>
-                    SITASONI Trend, Nawagarh, Chhattisgarh, India
-                  </p>
-                </div>
-              </div>
 
               {/* Stats */}
               <div className="grid grid-cols-2 gap-4 mb-8">
