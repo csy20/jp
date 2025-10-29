@@ -133,9 +133,9 @@ export default function HomePage() {
         <div className={`relative z-10 max-w-6xl mx-auto transition-all duration-1000 ${
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
             {/* Left - Content */}
-            <div className="text-left">
+            <div className="text-left order-2 md:order-1">
               <h1 className={`text-5xl md:text-7xl font-bold mb-4 ${
                 isDark ? 'text-white' : 'text-gray-900'
               }`}>
@@ -192,8 +192,8 @@ export default function HomePage() {
             </div>
 
             {/* Right - Profile Image */}
-            <div className="relative flex justify-center">
-              <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 mx-auto rounded-full overflow-hidden border-4 border-white/30 shadow-2xl">
+            <div className="relative flex justify-center order-1 md:order-2">
+              <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 mx-auto rounded-full overflow-hidden border-4 border-white/30 shadow-2xl">
                 <Image
                   src="/jaggu_profile.jpeg"
                   alt="Jageshwar Sahu Profile"
@@ -206,10 +206,10 @@ export default function HomePage() {
                 }`}></div>
               </div>
               {/* Floating Elements */}
-              <div className={`absolute -top-4 -right-4 w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full ${
+              <div className={`absolute -top-4 -right-4 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-full ${
                 isDark ? 'bg-purple-500/20' : 'bg-purple-500/30'
               } animate-pulse`}></div>
-              <div className={`absolute -bottom-4 -left-4 w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12 rounded-full ${
+              <div className={`absolute -bottom-4 -left-4 w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 rounded-full ${
                 isDark ? 'bg-pink-500/20' : 'bg-pink-500/30'
               } animate-pulse delay-1000`}></div>
             </div>
