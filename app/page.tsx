@@ -173,12 +173,8 @@ export default function HomePage() {
                 ))}
               </div>
 
-              {/* Blue Banner Section */}
-              <div className="mb-8 p-6 bg-blue-500 rounded-2xl text-white text-center shadow-lg">
-                <p className="text-lg font-semibold">
-                  Become a SITASONI trend member, join now
-                </p>
-              </div>
+              {/* Store Location Section */}
+              
 
               {/* CTA Button */}
               <a
@@ -212,6 +208,97 @@ export default function HomePage() {
               <div className={`absolute -bottom-4 -left-4 w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 rounded-full ${
                 isDark ? 'bg-pink-500/20' : 'bg-pink-500/30'
               } animate-pulse delay-1000`}></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location Card Section */}
+      <section className="relative px-4 py-16">
+        <div className="max-w-4xl mx-auto">
+          <div className={`rounded-2xl overflow-hidden shadow-2xl ${
+            isDark ? 'bg-gray-900/80 border border-white/10' : 'bg-white/80 border border-gray-200'
+          } backdrop-blur-sm`}>
+            <div className="grid md:grid-cols-2 gap-0">
+              {/* Map */}
+              <div className="h-80 md:h-96 w-full">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.7394024371477!2d83.37425!3d21.828889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2d1e1e1e1e1e1d%3A0x1e1e1e1e1e1e1e1e!2sNawagarh%2C%20Chhattisgarh%20491001%2C%20India!5e0!3m2!1sen!2sin!4v1234567890"
+                ></iframe>
+              </div>
+
+              {/* Info */}
+              <div className={`p-8 flex flex-col justify-center ${
+                isDark ? 'bg-gray-800/50' : 'bg-blue-50'
+              }`}>
+                <h3 className={`text-2xl font-bold mb-4 ${
+                  isDark ? 'text-white' : 'text-gray-900'
+                }`}>Visit Our Store</h3>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <MapPin className={`w-5 h-5 flex-shrink-0 mt-1 ${
+                      isDark ? 'text-blue-400' : 'text-blue-600'
+                    }`} />
+                    <div>
+                      <p className={`font-semibold ${
+                        isDark ? 'text-white' : 'text-gray-900'
+                      }`}>Address</p>
+                      <p className={`text-sm ${
+                        isDark ? 'text-gray-400' : 'text-gray-600'
+                      }`}>SITASONI Trend, Nawagarh, Chhattisgarh, India</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Phone className={`w-5 h-5 flex-shrink-0 mt-1 ${
+                      isDark ? 'text-blue-400' : 'text-blue-600'
+                    }`} />
+                    <div>
+                      <p className={`font-semibold ${
+                        isDark ? 'text-white' : 'text-gray-900'
+                      }`}>Phone</p>
+                      <a href="tel:+917024367848" className={`text-sm ${
+                        isDark ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'
+                      } transition-colors`}>
+                        +91 7024367848
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Mail className={`w-5 h-5 flex-shrink-0 mt-1 ${
+                      isDark ? 'text-blue-400' : 'text-blue-600'
+                    }`} />
+                    <div>
+                      <p className={`font-semibold ${
+                        isDark ? 'text-white' : 'text-gray-900'
+                      }`}>Email</p>
+                      <a href="mailto:support@sitasoni.in" className={`text-sm ${
+                        isDark ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'
+                      } transition-colors`}>
+                        support@sitasoni.in
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="https://www.google.com/search?sca_esv=4371f740622c0d3e&cs=1&output=search&kgmid=/g/11xmr19hff&q=SITASONI+trend&shndl=30&shem=dais,lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=c6e8b2dea1d3b652&utm_source=dais,lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300"
+                >
+                  <MapPin className="w-4 h-4" />
+                  View on Google Maps
+                </a>
+              </div>
             </div>
           </div>
         </div>
