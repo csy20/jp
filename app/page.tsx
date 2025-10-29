@@ -252,7 +252,7 @@ export default function HomePage() {
               </a>
             </div>
 
-            <div className="flex space-x-4">
+            <div className="hidden md:flex space-x-4">
               {socialLinks.map((social, index) => (
                 <a
                   key={index}
